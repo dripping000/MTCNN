@@ -1,0 +1,6 @@
+
+
+*、ncnn放在与.sln同级目录，包含到项目中
+.\ncnn;
+.\ncnn\layer;
+.\ncnn\layer\x86;
