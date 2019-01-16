@@ -1909,8 +1909,7 @@ namespace ncnn {
         return Mat();
     }
 
-    Mat
-    Mat::from_pixels_resize(const unsigned char *pixels, int type, int w, int h, int target_width, int target_height) {
+    Mat Mat::from_pixels_resize(const unsigned char *pixels, int type, int w, int h, int target_width, int target_height) {
         if (w == target_width && h == target_height)
             return Mat::from_pixels(pixels, type, w, h);
 

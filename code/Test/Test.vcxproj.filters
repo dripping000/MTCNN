@@ -15,21 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="timing.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="browse.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="mtcnn.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="stb_image.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="stb_image_write.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ncnn\layer\arm\convolution_1x1.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -132,14 +117,23 @@
     <ClInclude Include="ncnn\platform.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="browse.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mtcnn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="timing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="tiny_jpeg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="mtcnn.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ncnn\layer\arm\convolution_arm.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -198,6 +192,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ncnn\paramdict.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mtcnn.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

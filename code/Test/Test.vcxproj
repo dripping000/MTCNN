@@ -193,8 +193,8 @@
     <ClInclude Include="ncnn\paramdict.h" />
     <ClInclude Include="ncnn\platform.h" />
     <ClInclude Include="stb_image.h" />
-    <ClInclude Include="stb_image_write.h" />
     <ClInclude Include="timing.h" />
+    <ClInclude Include="tiny_jpeg.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

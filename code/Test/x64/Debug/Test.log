@@ -1,91 +1,17 @@
 ﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
-  paramdict.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(53): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(61): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(71): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(80): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(2254): note: 参见“sscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(82): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(2254): note: 参见“sscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(90): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(99): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(2254): note: 参见“sscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\paramdict.cpp(101): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(2254): note: 参见“sscanf”的声明
-  net.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(88): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(97): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(113): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(137): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(166): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(1193): note: 参见“fscanf”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(204): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(311): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(343): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: 参见“fopen”的声明
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(456): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(478): warning C4244: “return”: 从“__int64”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(490): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(520): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(520): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(532): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\net.cpp(532): warning C4267: “初始化”: 从“size_t”转换到“const int”，可能丢失数据
-  mat_pixel.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(602): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(692): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1091): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1123): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1142): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1395): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1414): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1624): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat_pixel.cpp(1643): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-  mat.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat.cpp(506): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\mat.cpp(522): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-  convolution_x86.cpp
-  split.cpp
-  softmax.cpp
-  prelu.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\prelu.cpp(42): warning C4477: 'fprintf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
-  c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\prelu.cpp(42): note: consider using '%zd' in the format string
-  pooling.cpp
-  input.cpp
-  innerproduct.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(52): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(66): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(69): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(81): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(87): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(90): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(102): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\innerproduct.cpp(113): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-  dropout.cpp
-  convolution.cpp
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(56): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(70): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(73): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(85): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(91): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(94): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(106): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-c:\users\keda\desktop\git\mtcnn\code\test\ncnn\layer\convolution.cpp(117): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
-  softmax_arm.cpp
-  prelu_arm.cpp
-  pooling_arm.cpp
-  innerproduct_arm.cpp
-  convolution_arm.cpp
-  layer.cpp
-  blob.cpp
-  正在生成代码...
+  main.cpp
+c:\users\keda\desktop\git\mtcnn\code\include\opencv2\core\mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\keda\desktop\git\mtcnn\code\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\keda\desktop\git\mtcnn\code\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\keda\desktop\git\mtcnn\code\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\keda\desktop\git\mtcnn\code\include\opencv2\imgproc.hpp(592): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(215): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(216): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(217): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(417): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(418): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(465): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(491): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+c:\users\keda\desktop\git\mtcnn\code\test\main.cpp(547): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+innerproduct_arm.obj : warning LNK4099: 未找到 PDB“vc140.pdb”(使用“innerproduct_arm.obj”或在“C:\Users\keda\Desktop\Git\MTCNN\bin\vc140.pdb”中寻找)；正在链接对象，如同没有调试信息一样
   Test.vcxproj -> C:\Users\keda\Desktop\Git\MTCNN\code\Test\..\..\bin\Test.exe
