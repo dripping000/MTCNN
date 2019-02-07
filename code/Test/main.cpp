@@ -445,23 +445,25 @@ int main(int argc, char **argv) {
 	//}
 	//const char *model_path = argv[1];
 	//char *szfile = argv[2];
-
     const char *model_path = "./models";
     char *szfile = "./Resource/sample.jpg";
 
 	getCurrentFilePath(szfile, saveFile);
+
 	int Width = 0;
 	int Height = 0;
 	int Channels = 0;
 	unsigned char *inputImage = loadImage(szfile, &Width, &Height, &Channels);
 	if (inputImage == nullptr || Channels != 3) return -1;
 	ncnn::Mat ncnn_img = ncnn::Mat::from_pixels(inputImage, ncnn::Mat::PIXEL_RGB, Width, Height);
+
 	std::vector<Bbox> finalBbox;
 	MTCNN mtcnn(model_path);
 	double startTime = now();
 	mtcnn.detect(ncnn_img, finalBbox);
 	double nDetectTime = calcElapsed(startTime, now());
 	printf("time: %d ms.\n ", (int)(nDetectTime * 1000));
+
 	int num_box = finalBbox.size();
 	printf("face num: %u \n", num_box);
     bool draw_face_feat = true;
@@ -472,12 +474,11 @@ int main(int argc, char **argv) {
     for (int i = 0; i < num_box; i++) {
         if (draw_face_feat) {
             const uint8_t red[3] = {255, 0, 0};
-
             drawRectangle(inputImage, Width, Channels, finalBbox[i].x1, finalBbox[i].y1,
                           finalBbox[i].x2,
                           finalBbox[i].y2, red);
-            const uint8_t blue[3] = {0, 0, 255};
 
+            const uint8_t blue[3] = {0, 0, 255};
             for (int num = 0; num < 5; num++) {
                 drawPoint(inputImage, Width, Channels, (int) (finalBbox[i].ppoint[num] + 0.5f),
                           (int) (finalBbox[i].ppoint[num + 5] + 0.5f), blue);
@@ -493,7 +494,7 @@ int main(int argc, char **argv) {
         RemoveRedEyes(inputImage, inputImage, Width, Height, Channels, left_eye_x, left_eye_y, radius);
         RemoveRedEyes(inputImage, inputImage, Width, Height, Channels, right_eye_x, right_eye_y, radius);
     }
-    facialPoseCorrection(inputImage, Width, Height, Channels, left_eye_x, left_eye_y, right_eye_x, right_eye_y);
+    //facialPoseCorrection(inputImage, Width, Height, Channels, left_eye_x, left_eye_y, right_eye_x, right_eye_y);
     saveImage("_done.jpg", Width, Height, Channels, inputImage);
     free(inputImage);
     printf("press any key to exit. \n");
@@ -501,39 +502,38 @@ int main(int argc, char **argv) {
 
 
 #if 1
-    cv::VideoCapture capture(0);
+    cv::VideoCapture capture(1);
     capture.set(CV_CAP_PROP_FRAME_WIDTH, 640);
     capture.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
     if (!capture.isOpened()) return -1;
     cv::Mat frame;
 
+    Width = 640;
+    Height = 480;
 
-    int DebugMK = 0;
-    while (capture.read(frame)) {
-        std::vector<Bbox> finalBbox_;
-
-
+    while (capture.read(frame)) {     
         int q = cv::waitKey(10);
         if (q == 27) break;
-        cv::Rect result;
+
         double t1 = (double)cv::getTickCount();
-        //tracker.DetectFace(result, frame);
         ncnn_img = ncnn::Mat::from_pixels(frame.data, ncnn::Mat::PIXEL_BGR2RGB, frame.cols, frame.rows);
+        std::vector<Bbox> finalBbox_;
         mtcnn.detect(ncnn_img, finalBbox_);
+        printf("total %gms\n", ((double)cv::getTickCount() - t1) * 1000 / cv::getTickFrequency());
+        printf("------------------\n");
+
         size_t num_box = finalBbox_.size();
         printf("face num: %d \n", (int)num_box);
 
 #if 1
         for (int i = 0; i < num_box; i++) {
-            DebugMK++;
-
             if (draw_face_feat) {
                 const uint8_t red[3] = { 255, 0, 0 };
                 drawRectangle(frame.data, Width, Channels, finalBbox_[i].x1, finalBbox_[i].y1,
                     finalBbox_[i].x2,
                     finalBbox_[i].y2, red);
-                const uint8_t blue[3] = { 0, 0, 255 };
 
+                const uint8_t blue[3] = { 0, 0, 255 };
                 for (int num = 0; num < 5; num++) {
                     drawPoint(frame.data, Width, Channels, lround(finalBbox_[i].ppoint[num]),
                         lround(finalBbox_[i].ppoint[num + 5]), blue);
@@ -549,12 +549,9 @@ int main(int argc, char **argv) {
             RemoveRedEyes(frame.data, frame.data, Width, Height, Channels, left_eye_x, left_eye_y, radius);
             RemoveRedEyes(frame.data, frame.data, Width, Height, Channels, right_eye_x, right_eye_y, radius);
         }
+        facialPoseCorrection(frame.data, Width, Height, Channels, left_eye_x, left_eye_y, right_eye_x, right_eye_y);
 #endif
 
-        printf("total %gms\n", ((double)cv::getTickCount() - t1) * 1000 / cv::getTickFrequency());
-        printf("------------------\n");
-        //rectangle(frame, result, Scalar(0, 0, 255), 2);
-        printf("people num: %d \n", DebugMK);
         imshow("frame", frame);
     }
     capture.release();

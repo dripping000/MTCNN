@@ -10,8 +10,8 @@ main.cpp(216): warning C4244: “参数”: 从“float”转换到“int”，�
 main.cpp(217): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
 main.cpp(417): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
 main.cpp(418): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
-main.cpp(465): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-main.cpp(491): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
+main.cpp(467): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(492): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
 main.cpp(547): warning C4244: “参数”: 从“int”转换到“float”，可能丢失数据
   mtcnn.cpp
 mtcnn.cpp(77): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
@@ -123,7 +123,7 @@ ncnn\paramdict.cpp(99): warning C4996: 'sscanf': This function or variable may b
 ncnn\paramdict.cpp(101): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(2254): note: 参见“sscanf”的声明
   正在生成代码
-  All 1331 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 1330 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   已完成代码的生成
   Test.vcxproj -> C:\Users\Kun\Desktop\Git\MTCNN\code\Test\..\..\bin\Test.exe
   Test.vcxproj -> ..\..\bin\Test.pdb (Full PDB)
